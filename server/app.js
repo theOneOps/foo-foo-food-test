@@ -1,18 +1,16 @@
 const express = require('express')
 
-const mongoose = require('mongoose')
-
 require('dotenv').config()
 
 const app = express()
-
-
 
 //Cette ligne permet au serveur Express de traiter les corps de requêtes au format JSON. 
 // Elle est importante pour les routes API qui reçoivent des données JSON, comme les requêtes POST.
 app.use(express.json());
 
 const connectDB = require('./config/db')
+
+// connexion à la base de données
 
 connectDB()
 

@@ -1,4 +1,4 @@
-const Users = require('../models/users'); // Assure-toi d'avoir le bon chemin pour le modèle
+const Users = require('../models/users');
 
 const initializeDatabase = async () => {
   try {
